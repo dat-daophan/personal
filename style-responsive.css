@@ -101,8 +101,6 @@ PRELOADER
 
 
 
-
-
 /*
 **************************
 NAVIGATION OPACITY
@@ -119,9 +117,6 @@ NAVIGATION OPACITY
   top:0;
   z-index:9999;
   background:rgba(0,0,0,0.95);
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 ul.menu-fullscreen{
@@ -163,12 +158,9 @@ ul.menu-fullscreen li > a:hover{
   display:none;
   position:absolute;
   top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
- 
-  
-  
+  width:100%;
+  margin:0 auto;
+  height:80px;
   z-index: 9998;
 }
 
@@ -300,6 +292,7 @@ header li{
   text-transform:uppercase;
   list-style-type: none; margin: 0 auto; float: left;
 }
+
 
 header li > a{
   font-size:13px;
@@ -543,7 +536,7 @@ PORTFOLIO GRID
 
 
 .portfolio-grid li.grid-item2{
-  width: 465px;
+  width: 265px;
   
   z-index:999999;
   position: relative;
@@ -587,7 +580,7 @@ PORTFOLIO GRID
 
 .portfolio-grid li.grid-item2 a.ajax-link .grid-hover2{
   width: 415px;
-  
+  float: left;
   z-index:999999;
   position: relative;
   margin-left: 10px;
@@ -633,7 +626,12 @@ border-right: 1px solid black;
 margin-left: 0px;
 margin-right: -100px;
 writing-mode:tb-rl;
-  
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform: rotate(0deg);
+	white-space:nowrap;
     display:block;
 	height: 80px;
 	float: left;
@@ -681,13 +679,13 @@ writing-mode:tb-rl;
   font-size:100px;
   bottom:40px;
   left:40px;
-  padding-top: 60px;
+  padding-top: 200px;
   color:black;
   letter-spacing:2px;
   font-weight:800;
   line-height:50px;
   float: left;
-  padding-left: 140px;
+  padding-left: 150px;
   
   
 }
@@ -849,3 +847,8 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+
+
+
+
